@@ -5,7 +5,7 @@ import Loading from "../loading/Loading.jsx";
 import GetProducts from "../../data/GetProducts.jsx";
 
 
-export default function ItemListContainer({ titles }) {
+function ItemListContainer({ titles }) {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
     const { idCategory, idInput } = useParams();
@@ -43,3 +43,5 @@ export default function ItemListContainer({ titles }) {
     )
 
 }
+
+export default  ItemListContainer;

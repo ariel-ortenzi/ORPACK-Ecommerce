@@ -7,8 +7,6 @@ import NotFound404 from './components/notFound404/NotFound404.jsx';
 import { CartProvider } from "./components/context/CartContext.jsx";
 import CartList from './components/cart/CartList.jsx';
 
-//jdajdjsda
-
 function App() {
 
   return (
