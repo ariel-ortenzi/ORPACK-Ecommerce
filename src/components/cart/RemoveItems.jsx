@@ -22,13 +22,19 @@ const RemoveItems = ({ product, showDeleteButton = false }) => {
             customClass: {
                 confirmButton: "bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-105 hover:shadow-xl transform transition-all duration-300 ease-out font-quickSand z-10",
                 cancelButton: "bg-[#f80808] text-white font-bold py-2 px-4 rounded-lg hover:bg-red-500 hover:scale-105 hover:shadow-xl transform transition-all duration-300 ease-out font-quickSand z-10"
-            }
+            },
         }).then((result) => {
             if (result.isConfirmed) {
                 Swal.fire({
                     title: "VACIADO",
                     text: "El carrito ha sido vaciado.",
-                    icon: "success"
+                    icon: "success",
+                    confirmButtonText: "OK",
+                    customClass: {
+                        confirmButton: "bg-azulOrpack text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-950 hover:scale-105 hover:shadow-xl transform transition-all duration-300 ease-out font-quickSand z-10",
+                        title: 'font-quickSand',
+                        text: 'font-quickSand',
+                    }
                 });
                 setCart([]);
             }

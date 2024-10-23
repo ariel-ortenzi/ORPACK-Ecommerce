@@ -18,7 +18,7 @@ const AddToCart = ({product, icon}) => {
                 html: `No hay más stock disponible de: <br><strong>${product.name}</strong>`,
                 confirmButtonText: `ENTENDIDO`,
                 customClass: {
-                    confirmButton: 'bg-[#144681] text-white font-bold py-2 px-4 rounded-lg hover:bg-[#0d3460] hover:scale-105 hover:shadow-xl transform transition-all duration-300 ease-out font-quickSand z-10'
+                    confirmButton: 'bg-azulOrpack text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-950 hover:scale-105 hover:shadow-xl transform transition-all duration-300 ease-out font-quickSand z-10'
                 }
             });
             return;
@@ -40,7 +40,7 @@ const AddToCart = ({product, icon}) => {
     };
 
     return (
-        <button className="bg-[#144681] text-white font-bold py-2 px-4 rounded-lg hover:bg-[#0d3460] hover:scale-105 hover:shadow-xl transform transition-all duration-300 ease-out font-quickSand z-10" onClick = {addToCart}>{icon ? <FaCirclePlus size = "25px" /> : 'AGREGAR AL CARRITO'}</button>
+        <button className="bg-azulOrpack text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-950 hover:scale-105 hover:shadow-xl transform transition-all duration-300 ease-out font-quickSand z-10" onClick = {addToCart}>{icon ? <FaCirclePlus size = "25px" /> : 'AGREGAR AL CARRITO'}</button>
     );
 };
 
