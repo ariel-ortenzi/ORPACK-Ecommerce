@@ -37,6 +37,7 @@ This project is built with the following technologies:
 - **Vercel** (for deployment)
 - **SweetAlert2** (for displaying elegant alerts and notifications)
 - **React Icons** (for using custom icons)
+- **React Spinners** (for loading page)
 - **GitHub** (for version control)
 
 ## Installation and Usage
@@ -139,6 +140,7 @@ El proyecto está desarrollado utilizando las siguientes tecnologías:
 - **Vercel** (para el despliegue del proyecto)
 - **SweetAlert2** (para mostrar alertas y notificaciones elegantes)
 - **React Icons** (para el uso de iconos personalizados)
+- **React Spinners** (para página de carga)
 - **GitHub** (para el control de versiones del código)
 
 
