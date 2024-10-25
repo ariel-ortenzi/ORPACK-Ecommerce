@@ -37,9 +37,19 @@ const FormCheckOut = ({ totalPrice, quantity, onOrderCreated }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if (cart.length === 0) {
+            Swal.fire({
+                icon: "error",
+                title: "CARRITO VACÍO",
+                text: "Debe agregar los productos que desea comprar al carrito para realizar esta acción",
+                customClass: {
+                    confirmButton: "bg-azulOrpack text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-950 hover:scale-105 hover:shadow-xl transform transition-all duration-300 ease-out font-quickSand",
+                }
+            });
+            return;
+        }
         const errors = validateForm();
         setFormErrors(errors);
-
         if (Object.keys(errors).length === 0) {
             Swal.fire({
                 title: '¿Confirmar compra?',
